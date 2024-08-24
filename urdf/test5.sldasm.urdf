@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="test5.sldasm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00146878796766266 0.0100094141131085 0.0605146963622026"
+        rpy="0 0 0" />
+      <mass
+        value="5.45188733876874" />
+      <inertia
+        ixx="0.0197246710172555"
+        ixy="-1.04838305798838E-08"
+        ixz="-0.000451929730195363"
+        iyy="0.0223209650406088"
+        iyz="-1.35072701798501E-06"
+        izz="0.0349798794143071" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5.sldasm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.772549019607843 0.752941176470588 0.733333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5.sldasm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="trai_link">
+    <inertial>
+      <origin
+        xyz="-8.88180099467561E-07 -8.32667268468867E-17 -0.0203827214868579"
+        rpy="0 0 0" />
+      <mass
+        value="0.968975774829784" />
+      <inertia
+        ixx="0.00170115560343656"
+        ixy="-1.8909673343801E-18"
+        ixz="-1.82218282057684E-09"
+        iyy="0.00170115056996547"
+        iyz="4.80534480340535E-18"
+        izz="0.00288276759907122" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5.sldasm/meshes/trai_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5.sldasm/meshes/trai_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_trai"
+    type="continuous">
+    <origin
+      xyz="0.00149042687503501 0.219109836058929 0.0202499999999946"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="trai_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="phai_link">
+    <inertial>
+      <origin
+        xyz="0.000131413454829796 -8.71525074330748E-15 0.0203827214868589"
+        rpy="0 0 0" />
+      <mass
+        value="0.968975774829785" />
+      <inertia
+        ixx="0.00170115560343656"
+        ixy="2.00760235295417E-18"
+        ixz="-1.82218282862992E-09"
+        iyy="0.00170115056996547"
+        iyz="-1.27465295418404E-19"
+        izz="0.00288276759907123" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5.sldasm/meshes/phai_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test5.sldasm/meshes/phai_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_phai"
+    type="continuous">
+    <origin
+      xyz="0.00149042687503791 -0.198363363941079 0.020249999999995"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="phai_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
